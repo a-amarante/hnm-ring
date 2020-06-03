@@ -1,0 +1,52 @@
+Integrator:  symp 
+Stepsize:    900  		# 1/day = 0.0027
+AngleUnit:   deg	        # base unit choices: deg, rad
+MassUnit:    1.498653780859156e+19 kg	# base unit choices: g, Msun
+LengthUnit:  km 	        # base unit choices: m, AU (or ua), pc
+TimeUnit:    s                  # base unit choices: s, h, d, yr
+
+M  =  869.6138177608748		# mass of the dominant object (units of MassUnit)
+#M  =  975.493806621063		# mass of the dominant object P+C (units of MassUnit)
+N  =  Auto		        # number of objects (including the dominant mass)
+NLWP  =  Auto		        # number of light weight objects 
+
+InputCoord: BodyCentric
+InputOrder: Mass x1 x2 x3 v1 v2 v3 ID				# data columns
+#InputOrder: Mass Semi Ecc Inc LongAsc LongPeri MeanLong ID	# data columns
+
+OblateRadius = 0.0101095197978096
+#OblateRadius = 1.0
+OblateJ2     = 0.001
+#OblateJ2     = 12.641698055
+OblateJ4     = 0.0        
+OblateJ6     = 0.0        
+
+ParticleType: HWP
+include: moonsC1.in
+ParticleType: LWP
+include: dust.in
+
+PruneCollisions = True
+UserInitFile: user.in
+
+Tfinal:         3.1104e+10	# final integration time (TimeUnit)
+#OutputInterval: 3.1104e+07 	# time interval to write output (TimeUnit)
+StateInterval:  3.1104e+07	# time interval to write output (TimeUnit)
+SaveInterval:   4.57360818e+15 	# time interval to save system state
+SaveFiles: save.dat		# Low-level save file to allow restarting
+
+#OutputFiles: body%d.dat		# name of body-specific output files
+#OutputOrder: time Semi Ecc Inc LongAsc ArgPeri TrueAn	# data columns
+#OutputOrder: time x1 x2 x3 v1 v2 v3 Mass ID 		# data columns
+#OutputCoord: BodyCentric        # output coordinate system
+#OutputHeader: True	         # Include column id codes and comments?
+#OutputDigits: 12	         # precision of numbers in output 
+#OutputTypes: HWPS LWPs	         # particle types to produce files for
+
+StateFiles: state%d.dat		# name of body-specific output files
+#StateOrder: time Semi Ecc Inc LongAsc ArgPeri TrueAn	# data columns
+StateOrder: time x1 x2 x3 v1 v2 v3 Mass ID		# data columns
+StateCoord: BodyCentric         # output coordinate system
+StateHeader: True		# Include column id codes and comments?
+StateDigits: 12		        # precision of numbers in output 
+StateTypes: HWPS LWPs		# particle types to produce files for
