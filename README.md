@@ -36,3 +36,11 @@ Disclaimers
 
 * The C source code of this repository is available on reasonable request.
 
+Recent Publications
+-------------------
+
+The code was used in the following recent studies:
+
+* Amarante, A., Winter, O. C., Sfair, R. (2020), Stability and Evolution of Fallen Particles Around the Surface of Asteroid (101955) Bennu. JGR Planets.
+* G. O. Barbosa, O. C. Winter, A. Amarante, A. Izidoro, R. C. Domingos, E. E. N. Macau (2020), Earth-size planet formation in the habitable zone of circumbinary stars. MNRAS.
+* T. S. Moura, O. C. Winter, A. Amarante, R. Sfair, G. Borderes-Motta, G. Valvano (2019), Dynamical environment and surface characteristics of asteroid (16) Psyche. MNRAS.
