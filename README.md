@@ -5,7 +5,9 @@ A generator initial conditions tool to handle Minor-Mercury and HNBody packages.
 
 ``HNM-Ring package`` generates the initial conditions of input files for Minor-Mercury [(A. Amarante et al., 2020)](https://github.com/a-amarante/minor-mercury) and HNBody [(Rauch and Hamilton, 2002)](http://janus.astro.umd.edu/HNBody) packages. The user can manipulate several sets of initial condition configurations using ``input.ic`` file. It can handle single star systems, binary, triple, planetary, satellite, coorbital, asteroidal, among others.
 
-The J2-J4-J6 ``Geometric Elements`` computational corrections (Renner and Sicardy, 2006) were also implemented in this version.
+For example, the user can handle with several initial disk density profiles for embryos and planetesimals (Raymond et al., 2004; Kokubo and Ida, 2000; Chambers et al., 1996) of the planetary formation integrations (see, e.g., Barbosa et al. (2020)).
+
+The J2-J4-J6 ``Geometric Elements`` computational corrections (Renner and Sicardy, 2006; Borderies-Rappaport and Longaretti, 1994) were also implemented in this version.
 
 How to compile and run
 ----------------------
