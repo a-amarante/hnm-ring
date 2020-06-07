@@ -7,6 +7,8 @@ A generator initial conditions tool to handle Minor-Mercury and HNBody packages.
 
 For example, the user can handle with several initial disk density profiles for embryos and planetesimals (Raymond et al., 2004; Kokubo and Ida, 2000; Chambers et al., 1996) of the planetary formation integrations (see, e.g., Barbosa et al. (2020)).
 
+The ``Solar Radiation Pressure`` (Burns et al., 1979; Mignard, 1984) can also take into account over numerical integrations.
+
 The J2-J4-J6 ``Geometric Elements`` computational corrections (Renner and Sicardy, 2006; Borderies-Rappaport and Longaretti, 1994) were also implemented in this version.
 
 How to compile and run
