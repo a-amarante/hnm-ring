@@ -50,6 +50,7 @@ CirVel: no			# use Circular Speed [Mer/HNB]
 Ox =  3.107990670602415E-01	# X-Center of particle distribution [Mer/HNB]
 Oy =  8.676589263734302E-02	# Y-Center of particle distribution [Mer/HNB]
 Oz = -6.024024962858008E-04	# Z-Center of particle distribution [Mer/HNB]
+DogRad =  3.18540671334461E-1	# to use when X-Y-Z-Center=0 and DogVel: yes [Mer/HNB]
 c ------------------------------------------------------------------------------------------------------------------------------------
 ### Use Cartesian coordinates ###
 X_min = 2.42093942183383037E-01	# minimum X coordinate [Mer/HNB]
@@ -169,6 +170,7 @@ eCirVel: no			# use Circular Speed [Mer/HNB]
 eOx =  0.0			# X-Center of embryo distribution [Mer/HNB]
 eOy =  0.0			# Y-Center of embryo distribution [Mer/HNB]
 eOz =  0.0			# Z-Center of embryo distribution [Mer/HNB]
+eDogRad =  0.0			# to use when X-Y-Z-Center=0 and eDogVel: yes [Mer/HNB]
 c ------------------------------------------------------------------------------------------------------------------------------------
 ### Use Cartesian coordinates ###
 eX_min = 2.42093942183383037E-01# minimum X coordinate [Mer/HNB]
